@@ -1,0 +1,339 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CandidateRegistration_Home.aspx.cs" MasterPageFile="~/Site.Master" Inherits="Site.CandidateRegistration_Home" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
+    <script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
+    <link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+</asp:Content>
+<asp:Content ID="content1" ContentPlaceHolderID="MainContent" runat="server">
+    <div id="page-container">
+        <div id="page-content-wrapper" style="width: 100%; margin-right: 0px; margin-left: 0px; min-height: 390.6px;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info" id="dvSuccess">
+                            <strong><i class="fa fa-1x fa-clock-o"></i></strong>
+                            Canditate Registration
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Name of the applicant</div>
+                    <div class="col-md-3">
+                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txtApplicantName" />
+                    </div>
+
+                    <div class="col-md-3">Fathers Name</div>
+
+                    <div class="col-md-3">
+                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txtFathersName" />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Mothers Name</div>
+                    <div class="col-md-3">
+                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txtMothersName" />
+                    </div>
+
+                    <div class="col-md-3">DOB</div>
+
+                    <div class="col-md-3">
+                        <input type="date" runat="server" id="txtDOB" />
+
+                        <img src="calender.png" />
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">UID No</div>
+                    <div class="col-md-3">
+                        <input type="text" id="txtUIDNumber" onkeypress="return isNumber(event)" maxlength="12" runat="server" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">&nbsp;</div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info" id="EducationalDetails">
+                            <strong><i class="fa fa-1x fa-book"></i></strong>
+                            Educational Qualification
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10">
+                        <table>
+                            <thead>
+                                <tr style="background-color: burlywood">
+                                    <td>Exam passed</td>
+                                    <td>School name</td>
+                                    <td>Board/University</td>
+                                    <td>Roll No</td>
+                                    <td>Year of passing</td>
+                                    <td>Total marks</td>
+                                    <td>Marks obtained </td>
+                                    <td>Percentage</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td style="background-color: cadetblue">High School (10th)</td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt10thExam" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt10Schoolname" /></td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt10Board" /></td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt10YoP" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10TotalMarks" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10MarksObtained" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10Percentage" /></td>
+                                </tr>
+                                <tr>
+                                    <td style="background-color: cadetblue">Intermediate (12th)</td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt12thExam" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt12Schoolname" /></td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt12Board" /></td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt12YoP" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12TotalMarks" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12MarksObtained" /></td>
+                                    <td>
+                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12Percentage" /></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info" id="PermanentAddress">
+                            <strong><i class="fa fa-1x fa-address-book"></i></strong>
+                            Permanent Addresss
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">Address</div>
+                    <div class="col-md-8">
+                        <asp:TextBox TextMode="MultiLine" runat="server" ID="txtAddress_per"></asp:TextBox>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">PIN</div>
+                    <div class="col-md-4">
+                        <input type="text" onkeypress="return isNumber(event)" runat="server" id="txtPin_Per" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">District</div>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddlDistrict" runat="server"></asp:DropDownList>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">State</div>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddlState" runat="server">
+                            <asp:ListItem Text="Uttar Pradesh" Value="0">
+                            </asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">&nbsp;</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info" id="CorrespondenceAddress">
+                            <strong><i class="fa fa-1x fa-address-book"></i></strong>
+                            Correspondance Address
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">Address</div>
+                    <div class="col-md-8">
+                        <asp:TextBox runat="server" TextMode="MultiLine" ID="txtAddressCorr"></asp:TextBox>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">PIN</div>
+                    <div class="col-md-4">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txtPinCorr" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">District</div>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddlDIsrictCorr" runat="server"></asp:DropDownList>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">State</div>
+                    <div class="col-md-4">
+                        <asp:DropDownList ID="ddlStateDD" runat="server">
+                            <asp:ListItem Text="Uttar Pradesh" Value="0">
+                            </asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">Photo Upload</div>
+                    <div class="col-md-3">
+                        <asp:FileUpload ID="FileUpload1" runat="server" />
+                        &nbsp;<asp:Button ID="btnUpload1" runat="server" Text="Upload Photo" OnClick="btnUpload1_Click" />
+                    </div>
+                    <div class="col-md-3">Signature Upload</div>
+
+                    <div class="col-md-3">
+                        <asp:FileUpload ID="FileUpload2" runat="server" />
+                        &nbsp;<asp:Button ID="btnUpload2" runat="server" Text="Upload Signature" OnClick="btnUpload2_Click" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">&nbsp;</div>
+                </div>
+                 <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-warning">
+                            <strong><i class="fa fa-1x fa-info"></i></strong>
+                            You will have to pay an amount of Rs 100 in order to finish the Registration
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info">
+                            <strong><i class="fa fa-1x fa-money"></i></strong>
+                            Payment
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">Amount: </div>
+                    <div class="col-md-2">
+                        <asp:TextBox ID="amount" runat="server" />
+                    </div>
+                    <%--<asp:TextBox ID="firstname" runat="server" />--%>
+                    <div class="col-md-2">Email: </div>
+                    <div class="col-md-2">
+                        <asp:TextBox ID="email" runat="server" />
+                    </div>
+                    <div class="col-md-2">Phone: </div>
+                    <div class="col-md-2">
+                        <asp:TextBox ID="phone" runat="server" />
+                    </div>
+                </div>
+                <input type="hidden" runat="server" id="key" name="key" />
+                <input type="hidden" runat="server" id="hash" name="hash" />
+                <input type="hidden" runat="server" id="txnid" name="txnid" />
+                <input type="hidden" runat="server" id="enforce_paymethod" name="enforce_paymethod" />
+                <div class="row" style="display: none;">
+                    <div>Product Info: </div>
+                    <div>
+                        <asp:TextBox ID="productinfo" runat="server" />
+                    </div>
+                    <div>Success URI: </div>
+                    <div>
+                        <asp:TextBox ID="surl" runat="server" />
+                    </div>
+                    <div>Failure URI: </div>
+                    <div>
+                        <asp:TextBox ID="furl" runat="server" />
+                    </div>
+                    <div>Service Provider: </div>
+
+                    <div>
+                        <asp:TextBox ID="service_provider" runat="server" Text="payu_paisa" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <asp:Button Text="Proceed to payment" CssClass="btn btn-primary" runat="server" ID="btnSubmitData" OnClick="btnSubmitData_Click" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function onlyAlphabets(e, t) {
+
+            try {
+
+                if (window.event) {
+
+                    var charCode = window.event.keyCode;
+
+                }
+
+                else if (e) {
+
+                    var charCode = e.which;
+
+                }
+
+                else { return true; }
+
+                if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 32)
+
+                    return true;
+
+                else
+
+                    return false;
+
+            }
+
+            catch (err) {
+
+                alert(err.Description);
+
+            }
+
+        }
+
+        function isNumber(evt) {
+            evt = (evt) ? evt : window.event;
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+</asp:Content>

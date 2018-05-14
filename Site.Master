@@ -1,0 +1,168 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Site.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <title>स्वदेश विकास समिति</title>
+    <link href="assets/scripts/tether/tether.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/hamburger/hamburgers.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/animation/animate.css" rel="stylesheet" />
+    <link href="assets/scripts/metismenu/metisMenu.min.css" rel="stylesheet" />
+    <link href="assets/scripts/metismenu/mm-vertical.css" rel="stylesheet" />
+    <script src="assets/scripts/jquery/jquery-3.2.1.js"></script>
+    <link href="assets/css/site.css" rel="stylesheet" />
+    <style type="text/css">
+        .navbar-toggleable-md .navbar-nav {
+            margin-right: 29rem;
+        }
+    </style>
+    <style>
+        .dropbtn {
+            background-color: white;
+            color: black;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+            .dropbtn:hover, .dropbtn:focus {
+                background-color: #ddd;
+            }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+        .dropdown a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color: cornflowerblue">
+    <form id="form1" runat="server" enctype="multipart/form-data">
+        <div>
+            <div id="page-header">
+                <div style="text-align: center; padding-right: 10px; background-color: red; color: white; color: white; font-size: 40px;">
+                    स्वदेश विकास समिति
+
+                </div>
+
+                <div id="page-container">
+                    <div id="page-content-wrapper" style="width: 100%; margin-right: 0px; margin-left: 0px;">
+
+                        <div class="container-fluid">
+                         <%--   <div class="row">
+                                <div class="col-md-3" style="background-color: red; padding: 29px;">
+                                    Society Logo
+                                </div>
+                                <div class="col-md-3">&nbsp;</div>
+                                <div class="col-md-3">&nbsp;</div>
+                                <div class="col-md-3" style="background-color: red; padding: 29px;">
+                                    President Logo
+                                </div>--%>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    &nbsp;
+                                </div>
+
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4" style="background-color: red; padding: 15px;">
+                                    कर्म से किस्मत
+                                </div>
+                                <div class="col-md-4">&nbsp;</div>
+                                <div class="col-md-4" style="background-color: red; padding: 15px;">Jai Prakash Tomar President</div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12" style="background-color: forestgreen; text-align: center; color: white; padding: 15px;">
+                                    स्वदेश विकास समिति  में आपका स्वागत है   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <nav class="navbar navbar-light  bg-faded navbar-toggleable-md 1navbar-inverse 1bg-inverse navbar-default">
+
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="Default.aspx"><i class="fa fa-home fa-2x"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="dropdown">
+                                    <button class="dropbtn"><i class="fa fa-sign-in fa-2x"></i>&nbsp;Registration</button>
+                                    <div class="dropdown-content">
+
+
+
+                                        <a id="ancMtoS" href="MemberRegistration.aspx">Member Registration</a>
+
+
+                                        <a id="ancSignReq" href="CandidateRegistration_Home.aspx">Candidate Registration</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#"><i class="fa fa-newspaper-o fa-2x"></i>&nbsp;Advertisement</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#"><i class="fa fa-archive fa-2x"></i>&nbsp;About Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link " href="#"><i class="fa fa-laptop fa-2x"></i>&nbsp;Help</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </nav>
+                </div>
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+    </form>
+</body>
+</html>
