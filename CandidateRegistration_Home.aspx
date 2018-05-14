@@ -13,6 +13,11 @@
     <div id="page-container">
         <div id="page-content-wrapper" style="width: 100%; margin-right: 0px; margin-left: 0px; min-height: 390.6px;">
             <div class="container-fluid">
+                <div id="frmError" runat="server">
+                    <span style="color: red">Please fill all mandatory fields.</span>
+                    <br />
+                    <br />
+                </div>
                 <div class="row">
                     <div class="col-md-3">&nbsp;</div>
                 </div>
@@ -92,11 +97,12 @@
                                 <tr>
                                     <td style="background-color: cadetblue">High School (10th)</td>
                                     <td>
-                                        <input type="text" runat="server" id="txt10thExam" /></td>
-                                    <td>
                                         <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt10Schoolname" /></td>
                                     <td>
-                                        <input type="text" runat="server" id="txt10Board" /></td>
+                                        <input type="text" runat="server" id="txt10thBoard" />
+                                    </td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt10RollNo" /></td>
                                     <td>
                                         <input type="text" runat="server" id="txt10YoP" /></td>
                                     <td>
@@ -109,11 +115,12 @@
                                 <tr>
                                     <td style="background-color: cadetblue">Intermediate (12th)</td>
                                     <td>
-                                        <input type="text" runat="server" id="txt12thExam" /></td>
-                                    <td>
                                         <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt12Schoolname" /></td>
                                     <td>
-                                        <input type="text" runat="server" id="txt12Board" /></td>
+                                        <input type="text" runat="server" id="txt12thBoard" />
+                                    </td>
+                                    <td>
+                                        <input type="text" runat="server" id="txt12RollNo" /></td>
                                     <td>
                                         <input type="text" runat="server" id="txt12YoP" /></td>
                                     <td>
@@ -224,7 +231,7 @@
                 <div class="row">
                     <div class="col-md-3">&nbsp;</div>
                 </div>
-                 <div class="row">
+                <div class="row">
                     <div class="col-md-12">
                         <div class="alert alert-warning">
                             <strong><i class="fa fa-1x fa-info"></i></strong>
@@ -243,7 +250,7 @@
                 <div class="row">
                     <div class="col-md-2">Amount: </div>
                     <div class="col-md-2">
-                        <asp:TextBox ID="amount" runat="server" />
+                        <asp:TextBox ID="amount" Text="100" ReadOnly="true" runat="server" />
                     </div>
                     <%--<asp:TextBox ID="firstname" runat="server" />--%>
                     <div class="col-md-2">Email: </div>
@@ -262,15 +269,15 @@
                 <div class="row" style="display: none;">
                     <div>Product Info: </div>
                     <div>
-                        <asp:TextBox ID="productinfo" runat="server" />
+                        <asp:TextBox ID="productinfo" runat="server" Text="Candidate Registration" />
                     </div>
                     <div>Success URI: </div>
                     <div>
-                        <asp:TextBox ID="surl" runat="server" />
+                        <asp:TextBox ID="surl" runat="server" Text="~/Success.aspx" />
                     </div>
                     <div>Failure URI: </div>
                     <div>
-                        <asp:TextBox ID="furl" runat="server" />
+                        <asp:TextBox ID="furl" runat="server" Text="~/Success.aspx" />
                     </div>
                     <div>Service Provider: </div>
 
@@ -335,5 +342,28 @@
             }
             return true;
         }
+
+        //$(function () {
+
+        //    $('#MainContent_txt10TotalMarks').bind('onkeypress', function () {
+        //        calculate();
+        //    });
+        //    $('#MainContent_txt10MarksObtained').on('onkeypress', function () {
+        //        calculate();
+        //    });
+        //    function calculate() {
+        //        var pPos = parseInt($('#MainContent_txt10TotalMarks').val());
+        //        var pEarned = parseInt($('#MainContent_txt10MarksObtained').val());
+        //        var perc = "";
+        //        if (isNaN(pPos) || isNaN(pEarned)) {
+        //            perc = " ";
+        //        } else {
+        //            perc = ((pEarned / pPos) * 100).toFixed(3);
+        //        }
+
+        //        $('#MainContent_txt10Percentage').val(perc);
+        //    }
+
+        //});
     </script>
 </asp:Content>

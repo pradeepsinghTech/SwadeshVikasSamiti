@@ -13,6 +13,15 @@ namespace Site {
     public partial class CandidateRegistration_Home {
         
         /// <summary>
+        /// frmError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl frmError;
+        
+        /// <summary>
         /// txtApplicantName control.
         /// </summary>
         /// <remarks>
@@ -58,15 +67,6 @@ namespace Site {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtUIDNumber;
         
         /// <summary>
-        /// txt10thExam control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt10thExam;
-        
-        /// <summary>
         /// txt10Schoolname control.
         /// </summary>
         /// <remarks>
@@ -76,13 +76,22 @@ namespace Site {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt10Schoolname;
         
         /// <summary>
-        /// txt10Board control.
+        /// txt10thBoard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt10Board;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt10thBoard;
+        
+        /// <summary>
+        /// txt10RollNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt10RollNo;
         
         /// <summary>
         /// txt10YoP control.
@@ -121,15 +130,6 @@ namespace Site {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt10Percentage;
         
         /// <summary>
-        /// txt12thExam control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt12thExam;
-        
-        /// <summary>
         /// txt12Schoolname control.
         /// </summary>
         /// <remarks>
@@ -139,13 +139,22 @@ namespace Site {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txt12Schoolname;
         
         /// <summary>
-        /// txt12Board control.
+        /// txt12thBoard control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txt12Board;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt12thBoard;
+        
+        /// <summary>
+        /// txt12RollNo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txt12RollNo;
         
         /// <summary>
         /// txt12YoP control.
