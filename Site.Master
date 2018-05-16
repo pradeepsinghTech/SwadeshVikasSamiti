@@ -18,6 +18,15 @@
         .navbar-toggleable-md .navbar-nav {
             margin-right: 29rem;
         }
+
+        .colorRow {
+            background-color: #378eae;
+        }
+
+        a {
+            color: #eef1f3;
+            text-decoration: none;
+        }
     </style>
     <style>
         .dropbtn {
@@ -78,45 +87,62 @@
                     स्वदेश विकास समिति
 
                 </div>
-
                 <div id="page-container">
                     <div id="page-content-wrapper" style="width: 100%; margin-right: 0px; margin-left: 0px;">
 
                         <div class="container-fluid">
-                         <%--   <div class="row">
-                                <div class="col-md-3" style="background-color: red; padding: 29px;">
-                                    Society Logo
+                            <div class="row colorRow">
+                                <div class="col-md-3" style="background-color: black; padding: 0px; height: 1px;">
+                                    <img src="Content/Capture.PNG" />
                                 </div>
-                                <div class="col-md-3">&nbsp;</div>
-                                <div class="col-md-3">&nbsp;</div>
-                                <div class="col-md-3" style="background-color: red; padding: 29px;">
-                                    President Logo
-                                </div>--%>
+                                <div class="col-md-6" style="color: white; font-family: initial; font-weight: bold; font-size: 41px;">
+                                    SWEDESH DEVELOPMENT SOCIETY
+                                </div>
+                                <div class="col-md-3" style="background-color: black; padding: 0px; height: 1px;">
+                                    <img src="Content/Capture.PNG" />
 
+                                </div>
                             </div>
-                            <div class="row">
+                            <div class="row colorRow">
                                 <div class="col-md-12">
                                     &nbsp;
                                 </div>
-
-
-
                             </div>
-                            <div class="row">
+                            <div class="row colorRow">
+                                <div class="col-md-12">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row colorRow">
+                                <div class="col-md-12">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row colorRow">
+                                <div class="col-md-12">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row colorRow">
+                                <div class="col-md-12">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row colorRow">
                                 <div class="col-md-4" style="background-color: red; padding: 15px;">
                                     कर्म से किस्मत
                                 </div>
                                 <div class="col-md-4">&nbsp;</div>
-                                <div class="col-md-4" style="background-color: red; padding: 15px;">Jai Prakash Tomar President</div>
+                                <div class="col-md-4" style="background-color: red; padding: 15px;">Mrs Sudesh Tomer</div>
 
 
                             </div>
-                            <div class="row">
+                            <div class="row colorRow">
                                 <div class="col-md-12">
                                     &nbsp;
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row colorRow">
                                 <div class="col-md-12" style="background-color: forestgreen; text-align: center; color: white; padding: 15px;">
                                     स्वदेश विकास समिति  में आपका स्वागत है   
                                 </div>
@@ -133,26 +159,26 @@
                                     <a class="nav-link" href="Default.aspx"><i class="fa fa-home fa-2x"></i>&nbsp;Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="dropdown">
-                                    <button class="dropbtn"><i class="fa fa-sign-in fa-2x"></i>&nbsp;Registration</button>
+                                    <button class="dropbtn"><i class="fa fa-sign-in fa-2x"></i>&nbsp;Candidate Registration</button>
                                     <div class="dropdown-content">
 
 
 
-                                        <a id="ancMtoS" href="MemberRegistration.aspx">Member Registration</a>
+                                        <a id="ancMtoS" href="CandidateRegistration_Education.aspx">For Education</a>
 
 
-                                        <a id="ancSignReq" href="CandidateRegistration_Home.aspx">Candidate Registration</a>
+                                        <a id="ancSignReq" href="CandidateRegistration_Home.aspx">For Games and Sports</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#"><i class="fa fa-newspaper-o fa-2x"></i>&nbsp;Advertisement</a>
+                                    <a class="nav-link " href="Advertisement.aspx"><i class="fa fa-newspaper-o fa-2x"></i>&nbsp;Advertisement</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#"><i class="fa fa-archive fa-2x"></i>&nbsp;About Us</a>
+                                    <a class="nav-link " href="About.aspx"><i class="fa fa-archive fa-2x"></i>&nbsp;About Us</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link " href="#"><i class="fa fa-laptop fa-2x"></i>&nbsp;Help</a>
+                                    <a class="nav-link " href="Contact.aspx"><i class="fa fa-mobile fa-2x"></i>&nbsp;Contact Us</a>
                                 </li>
 
                             </ul>
@@ -163,6 +189,7 @@
                 <asp:ContentPlaceHolder ID="MainContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
+        </div>
     </form>
 </body>
 </html>

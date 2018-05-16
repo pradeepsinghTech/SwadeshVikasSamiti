@@ -53,6 +53,12 @@
 
         public string StateCorrespondence { get; set; }
 
+        public string Candidate_Category { get; set; }
+
+        public bool isEconomicalDisabledGen { get; set; }
+
+        public string RegistrationMode { get; set; }
+
 
     }
 }

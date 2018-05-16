@@ -10,7 +10,7 @@
 namespace Site {
     
     
-    public partial class CandidateRegistration_Home {
+    public partial class CandidateRegistration_Education {
         
         /// <summary>
         /// frmError control.

@@ -6,19 +6,17 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
-using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Site
 {
-    public partial class CandidateRegistration_Home : System.Web.UI.Page
+    public partial class CandidateRegistration_Education : System.Web.UI.Page
     {
         public string action1 = string.Empty;
         public string hash1 = string.Empty;
         public string txnid1 = string.Empty;
-        public string RegistrationMode = "Sports";
-
+        public string RegistrationMode = "Education";
         protected void Page_Load(object sender, EventArgs e)
         {
             key.Value = ConfigurationManager.AppSettings["MERCHANT_KEY"];
@@ -351,7 +349,7 @@ namespace Site
             user.StateCorrespondence = ddlState.SelectedValue;
             user.PictureName = Session["photoFileName"].ToString();
             user.Signature = Session["SignFileName"].ToString();
-            user.RegistrationMode = "Sports";
+            user.RegistrationMode = "Education";
             user.Candidate_Category = txtCategory.Text;
             user.isEconomicalDisabledGen = ChkEcDisabledGen.Checked == true ? true : false;
             int CandidateId = 0;
@@ -360,12 +358,8 @@ namespace Site
                 doPayment(user);
                 string RegistrationNumber = DateTime.Now.Year + "/" + DateTime.Now.Month + "/" + DateTime.Now.Day + "/" + CandidateId;
                 // Response.Write("<script type='text/javascript'>alert('Candidate Registered With Registration Number " + RegistrationNumber + "');</script>");
-
             }
-
-
         }
-
         public string Generatehash512(string text)
         {
 

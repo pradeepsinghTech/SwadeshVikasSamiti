@@ -10,6 +10,6 @@
 namespace Site {
     
     
-    public partial class Contact {
+    public partial class Advertisement {
     }
 }

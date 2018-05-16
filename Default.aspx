@@ -18,11 +18,12 @@
                         <a href="#">View/Aim</a>
                     </div>
                     <div class="col-md-6" style="background-color: indianred; padding: 36px;">
-                        Senior Secondary Examination  - 1/2018
-Registration Starting Date : 02 June 2018 
-Registration  Closing  Date : 05 July 2018
-Fee  Deposition Last Date    : 07 July 2018 
-Final Application Submition Last Date : 09 July 2018
+                        CANDIDATE REGISTRATION FOR S/sports/1/2018
+Registration Starting Date : 10 May 2018 
+Registration  Closing  Date : 20 June 2018
+Fee  Deposition Last Date    : 20 June 2018 
+                        <a href="CandidateRegistration_Home.aspx">For online application Click Here</a>
+
                     </div>
                     <div class="col-md-4">
                         Result  & Informations
@@ -37,11 +38,16 @@ Final Application Submition Last Date : 09 July 2018
                     <div class="col-md-2" style="background-color: red; padding: 28px; color: white;">
                         <a href="#">Team</a>
                     </div>
-                    <div class="col-md-6">
-                        &nbsp;
+                    <div class="col-md-6" style="background-color: indianred; padding: 36px;">
+                        CANDIDATE REGISTRATION FOR S/Edn /1/2018
+Registration Starting Date : 20 May 2018 
+Registration  Closing  Date : 30 August 2018
+Fee  Deposition Last Date    : 30 August 2018 
+                      <a href="CandidateRegistration_Education.aspx">For online application Click Here</a>
+
                     </div>
-                    <div class="col-md-4">
-                        &nbsp;
+                    <div class="col-md-4" style="background-color: #8fc8ee;height: 500px;margin-top: -168px;color: white;font-size: -webkit-xxx-large;">
+                        Result and Informations
                     </div>
 
                 </div>

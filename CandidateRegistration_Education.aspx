@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CandidateRegistration_Home.aspx.cs" MasterPageFile="~/Site.Master" Inherits="Site.CandidateRegistration_Home" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CandidateRegistration_Education.aspx.cs" MasterPageFile="~/Site.Master" Inherits="Site.CandidateRegistration_Education" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
     <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
@@ -6,8 +6,6 @@
     <script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
     <link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
 </asp:Content>
 <asp:Content ID="content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="page-container">
@@ -68,6 +66,15 @@
                 <div class="row">
                     <div class="col-md-3">&nbsp;</div>
 
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="alert alert-info">
+                            <strong><i class="fa fa-1x fa-book"></i></strong>
+                            Candidate Registration for Education adv No S/Edn/1/2018
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-md-12">
@@ -261,7 +268,8 @@
                 </div>
                 <div class="row">
                     <div class="col-md-6"></div>
-                    <asp:CheckBox ID="chkAccepttheAgreement" runat="server" /> I Agree/ मैं सहमत हूँ 
+                    <asp:CheckBox ID="chkAccepttheAgreement" runat="server" />
+                    I Agree/ मैं सहमत हूँ 
                 </div>
                 <div class="row">
                     <div class="col-md-3">&nbsp;</div>
