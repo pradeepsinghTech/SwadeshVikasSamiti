@@ -1,7 +1,22 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Site._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
+    <style type="text/css">
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('/Content/Spinner-1s-200px.gif') 50% 50% no-repeat rgb(249,249,249);
+        }
+    </style>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
 
     <div id="page-container">
         <div id="page-content-wrapper" style="width: 100%; margin-right: 0px; margin-left: 0px;">
@@ -46,7 +61,7 @@ Fee  Deposition Last Date    : 30 August 2018
                       <a href="CandidateRegistration_Education.aspx">For online application Click Here</a>
 
                     </div>
-                    <div class="col-md-4" style="background-color: #8fc8ee;margin-top: -168px;color: white;font-size: larger;">
+                    <div class="col-md-4" style="background-color: #8fc8ee;margin-top: -8.8%;color: white;font-size: larger;">
                         Result and Informations
                     </div>
 
@@ -68,7 +83,7 @@ Fee  Deposition Last Date    : 30 August 2018
                     </div>
 
                 </div>
-                <div class="row">
+                <div>
                     <div class="col-md-12">&nbsp;</div>
                 </div>
 
@@ -88,4 +103,6 @@ Fee  Deposition Last Date    : 30 August 2018
             </div>
         </div>
     </div>
+     <div class="loader"></div>
+
 </asp:Content>

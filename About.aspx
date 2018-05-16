@@ -1,11 +1,22 @@
 ﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="Site.About" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
-    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
-    <script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
-    <script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
-    <link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+     <style type="text/css">
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('/Content/Spinner-1s-200px.gif') 50% 50% no-repeat rgb(249,249,249);
+        }
+    </style>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(".loader").fadeOut('1000');
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="page-container">
@@ -13,9 +24,9 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-8">
-                        Swedeswh Development Society has been registered under society registration act 1860 at office of Registrar of Societies Meerut Division with effect from 23 March 2018.  Main aim /view of society is as under :-
+                        Swedesh Development Society has been registered under society registration act 1860 at office of Registrar of Societies Meerut Division with effect from 23 March 2018.  Main aim /view of society is as under :-
 
-	<p>Conduct various type of Games, sports Competition and written Exam, and choose brilliant and promising youths and student through these event. And provide them high level studies, coaching for Jobs and games coaching free of coast.</p>
+	<p>Conduct various type of Games, sports Competition and written Exam, and choose brilliant and promising youths and student through these events. And provide them high level studies, coaching for Jobs and games coaching free of cost.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -64,5 +75,6 @@
             </div>
         </div>
     </div>
+     <div class="loader"></div>
 
 </asp:Content>

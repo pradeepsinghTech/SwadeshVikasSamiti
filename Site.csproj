@@ -206,7 +206,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Capture.PNG" />
+    <Content Include="Content\jquery-ui.js" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\Spinner-1s-200px.gif" />
     <Content Include="DataBase.sql" />
     <Content Include="Failure.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -217,6 +219,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="footer-distributed.html" />
     <Content Include="Handler1.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
@@ -259,6 +262,8 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Site.Master" />
+    <Content Include="Styles\demo.css" />
+    <Content Include="Styles\footer-distributed.css" />
     <Content Include="Success.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />

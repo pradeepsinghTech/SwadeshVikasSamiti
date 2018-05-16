@@ -1,11 +1,22 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CandidateRegistration_Education.aspx.cs" MasterPageFile="~/Site.Master" Inherits="Site.CandidateRegistration_Education" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
-    <script src="Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
-    <script src="Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
-    <script src="Scripts/calendar-en.min.js" type="text/javascript"></script>
-    <link href="Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style type="text/css">
+        .loader {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            background: url('/Content/Spinner-1s-200px.gif') 50% 50% no-repeat rgb(249,249,249);
+        }
+    </style>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $(".loader").fadeOut("slow");
+        });
+    </script>
 </asp:Content>
 <asp:Content ID="content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="page-container">
@@ -341,6 +352,7 @@
             </div>
         </div>
     </div>
+     <div class="loader"></div>
     <script type="text/javascript">
         function onlyAlphabets(e, t) {
 
