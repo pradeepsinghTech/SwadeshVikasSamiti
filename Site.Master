@@ -21,12 +21,17 @@
     <script src="Content/jquery-ui.js"></script>
     <link href="Styles/demo.css" rel="stylesheet" />
     <link href="Styles/footer-distributed.css" rel="stylesheet" />
+    <script tpye="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <style type="text/css">
         .navbar-toggleable-md .navbar-nav {
             margin-right: 29rem;
         }
 
-        .colorRow {
+        .navbar-fixed-top {
+            position: fixed;
+        }
+        @media (max-width: 979px) { .navbar-fixed-top, .navbar-fixed-bottom { position: fixed; margin-left: 0; margin-right: 0; } }
+         .colorRow {
             background-color: #378eae;
         }
 
@@ -87,7 +92,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body style="background-color: cornflowerblue">
+<body>
     <form id="form1" runat="server" enctype="multipart/form-data">
         <div>
             <div id="page-header">

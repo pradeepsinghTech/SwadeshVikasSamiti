@@ -40,8 +40,8 @@ Fee  Deposition Last Date    : 20 June 2018
                         <a href="CandidateRegistration_Home.aspx">For online application Click Here</a>
 
                     </div>
-                    <div class="col-md-4">
-                        Result  & Informations
+                 <div class="col-md-4" style="background-color: #8fc8ee;margin-top:0;color: white;font-size: larger;">
+                        Result and Informations
                     </div>
 
                 </div>
@@ -61,9 +61,7 @@ Fee  Deposition Last Date    : 30 August 2018
                       <a href="CandidateRegistration_Education.aspx">For online application Click Here</a>
 
                     </div>
-                    <div class="col-md-4" style="background-color: #8fc8ee;margin-top: -8.8%;color: white;font-size: larger;">
-                        Result and Informations
-                    </div>
+                 
 
                 </div>
                 <div class="row">

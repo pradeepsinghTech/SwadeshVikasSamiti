@@ -94,63 +94,67 @@
                         </div>
                     </div>
                 </div>
+                 <div class="row">
+                    <div class="col-md-1">Exam passed</div>
+                    <div class="col-md-1">School name</div>
+                    <div class="col-md-1">Board/University</div>
+                    <div class="col-md-2">Roll No</div>
+                    <div class="col-md-2">Year of passing</div>
+                    <div class="col-md-1">Total marks</div>
+                    <div class="col-md-1">Marks obtained</div>
+                    <div class="col-md-1">Marks obtained</div>
+
+                </div>
                 <div class="row">
-                    <div class="col-md-10">
-                        <table>
-                            <thead>
-                                <tr style="background-color: burlywood">
-                                    <td>Exam passed</td>
-                                    <td>School name</td>
-                                    <td>Board/University</td>
-                                    <td>Roll No</td>
-                                    <td>Year of passing</td>
-                                    <td>Total marks</td>
-                                    <td>Marks obtained </td>
-                                    <td>Percentage</td>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td style="background-color: cadetblue">High School (10th)</td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt10Schoolname" /></td>
-                                    <td>
-                                        <input type="text" runat="server" id="txt10thBoard" />
-                                    </td>
-                                    <td>
-                                        <input type="text" runat="server" id="txt10RollNo" /></td>
-                                    <td>
-                                        <input type="text" runat="server" id="txt10YoP" /></td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10TotalMarks" /></td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10MarksObtained" /></td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10Percentage" /></td>
-                                </tr>
-                                <tr>
-                                    <td style="background-color: cadetblue">Intermediate (12th)</td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt12Schoolname" /></td>
-                                    <td>
-                                        <input type="text" runat="server" id="txt12thBoard" />
-                                    </td>
-                                    <td>
-                                        <input type="text" runat="server" id="txt12RollNo" /></td>
-                                    <td>
-                                        <input type="text" runat="server" id="txt12YoP" /></td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12TotalMarks" /></td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12MarksObtained" /></td>
-                                    <td>
-                                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12Percentage" /></td>
-                                </tr>
-
-                            </tbody>
-                        </table>
+                    <div class="col-md-1">High School (10th)</div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt10Schoolname" />
                     </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" id="txt10thBoard" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" runat="server" id="txt10RollNo" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" runat="server" id="txt10YoP" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10TotalMarks" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10MarksObtained" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt10Percentage" />
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-1">Intermediate (12th)</div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return onlyAlphabets(event,this);" id="txt12Schoolname" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" id="txt12thBoard" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" runat="server" id="txt12RollNo" />
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" runat="server" id="txt12YoP" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12TotalMarks" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12MarksObtained" />
+                    </div>
+                    <div class="col-md-1">
+                        <input type="text" runat="server" onkeypress="return isNumber(event)" id="txt12Percentage" />
+
+                    </div>
+
                 </div>
                 <div class="row">
                     <div class="col-md-3">&nbsp;</div>
