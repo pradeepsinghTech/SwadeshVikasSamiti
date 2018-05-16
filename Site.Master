@@ -99,7 +99,9 @@
                                     SWEDESH DEVELOPMENT SOCIETY
                                 </div>
                                 <div class="col-md-3" style="background-color: black; padding: 0px; height: 1px;">
-                                    <img src="Content/Capture.PNG" />
+                                    <img src="Content/Capture.PNG" style="
+    float: right;
+" />
 
                                 </div>
                             </div>
