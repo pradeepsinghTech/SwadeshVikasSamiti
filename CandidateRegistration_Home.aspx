@@ -71,6 +71,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12">
+                        <div class="alert alert-info">
+                            <strong><i class="fa fa-1x fa-bicycle"></i></strong>
+                            Candidate Registration for Sports adv No S/sports/1/2018
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
                         <div class="alert alert-info" id="EducationalDetails">
                             <strong><i class="fa fa-1x fa-book"></i></strong>
                             Educational Qualification

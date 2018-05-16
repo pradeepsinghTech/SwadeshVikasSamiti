@@ -46,7 +46,7 @@ Fee  Deposition Last Date    : 30 August 2018
                       <a href="CandidateRegistration_Education.aspx">For online application Click Here</a>
 
                     </div>
-                    <div class="col-md-4" style="background-color: #8fc8ee;margin-top: -168px;color: white;font-size: -webkit-xxx-large;">
+                    <div class="col-md-4" style="background-color: #8fc8ee;margin-top: -168px;color: white;font-size: larger;">
                         Result and Informations
                     </div>
 
